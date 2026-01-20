@@ -49,16 +49,63 @@ header h1 .wave{
 
 .hero {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
     text-align: center;
     position: relative;
-    padding: 50px 20px;
+    height: 100%;
+
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-icon {
+    position: absolute;
 }
 
 
+.circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle > img {
+    width: 60px;
+}
+
+
+.hero-circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-circle img {
+    width: 250px;
+}
+
+.content{
+    position: absolute;
+    font-size: ;
+    font-weight: 700px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.content h1{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 350px;
+    text-align: center;
+}
 
 
 .buttons{
@@ -99,5 +146,6 @@ header h1 .wave{
     background: #10b981;
     color: white;
 }
+
 
 
