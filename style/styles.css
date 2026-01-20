@@ -39,10 +39,17 @@ header h1 .wave{
 
 .header-btn{
     color: #FFFFFF;
-     background: linear-gradient(135deg, #1DB954, lightpink); 
-     padding: 15px 30px;
-     border-radius: 25px;
-     border: none;
+    background: linear-gradient(135deg, #1DB954, lightpink); 
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.header-btn:hover{
+   background-color: #ec4899;
+   color: #1A0B2E;
 
 }
 
@@ -457,9 +464,6 @@ footer {
 
 .footer-img {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     height: auto;
 
 }
@@ -472,9 +476,7 @@ footer {
 
 .footer-content {
     position: relative;
-    z-index: 2;
 }
-
 .footer-content h2 {
     color: #FFFFFF;
     font-size: 3rem;
@@ -520,5 +522,184 @@ footer {
     margin-top: 70px;
 }
 
+@media (max-width: 576px) {
+    .container {
+        padding: 20px;
+        gap: 20px;
+    }
 
+    .nav-links a {
+        font-size: 0;
+    }
 
+    .hero {
+        padding: 40px 0 60px;
+    }
+
+    .hero-bg {
+        width: 150%;
+        max-width: none;
+    }
+
+    .circle-wrapper {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 30px;
+
+    }
+
+    .mic-icon {
+        width: 40px;
+    }
+
+    .new-badge {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+        top: 5%;
+        right: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .spotify-btn,
+    .subscribe-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about {
+        padding: 40px 20px 80px;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .why-choose {
+        padding: 60px 20px;
+    }
+
+    .why-choose h2 {
+        font-size: 2rem;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-card {
+        padding: 30px;
+        margin-top: 0;
+    }
+
+    .featured-episodes h2 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+
+    .episodes-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .meet-host {
+        padding: 80px 20px;
+    }
+
+    .meet-host h2 {
+        font-size: 2rem;
+    }
+
+    .host-card {
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .host-info {
+        text-align: center;
+    }
+
+    .host-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 60px 20px 40px;
+        min-height: 300px;
+    }
+
+    .footer-content h2 {
+        font-size: 2rem;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-link p {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero-content {
+        max-width: 1400px;
+    }
+
+    .about {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .why-choose {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .episodes-grid {
+        max-width: 1400px;
+    }
+
+    .meet-host {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    footer {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
