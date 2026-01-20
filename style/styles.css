@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background:  #1a0f2e;
+    color: white;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+}
+
+header{
+    background-color: #1A0B2E;
+    
+}
+
+header h1{
+    color: #FFFFFF;
+}
+
+header h1 .wave{
+    color:  #ec4899;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.header-btn{
+    color: #FFFFFF;
+     background: linear-gradient(135deg, #1DB954, lightpink); 
+     padding: 15px 30px;
+     border-radius: 25px;
+     border: none;
+
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+
+
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.spotify-btn{
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1DB954, lightpink); 
+}
+.spotify-btn:hover {
+    background: linear-gradient(135deg, lightpink, #1DB954);
+}
+
+.subscribe-btn{
+    border: 1px solid #00FF88;
+    background: transparent;
+    color: #00FF88;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600px;
+    border-radius: 50px;
+    cursor: pointer;
+   
+}
+
+.subscribe-btn:hover {
+    background: #10b981;
+    color: white;
+}
+
+
